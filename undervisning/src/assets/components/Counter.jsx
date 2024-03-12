@@ -5,6 +5,8 @@ import { useState } from 'react'
   console.log("running the function")
   const [count, setCount] = useState(0)
 
+  const isEven = (count % 2 === 0)
+
   function increment() {
     setCount((previousValue) => previousValue + 1)
   }
@@ -18,7 +20,7 @@ import { useState } from 'react'
   }
     return (
    <div>
-    <p>Count : {count}</p>
+    <p >Count : {count}</p>
 
     <button onClick={decrement}>decrement</button>
     <button onClick={reset}></button>
