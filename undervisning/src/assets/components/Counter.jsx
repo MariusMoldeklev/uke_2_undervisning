@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+//need to create different functions so i can import each funcuion to the main jsx
 
  export function Counter() {
   console.log("running the function")
